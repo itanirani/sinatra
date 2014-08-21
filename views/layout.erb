@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang>
 <head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
 	<title>Document</title>
 </head>
 <body>
+	<div class="pagelay">
+	<header><h1> Contact Manager 1.0 </h1>
 
-    <h1> I'm in the layout!!! </h1>
+		<nav> <h3>Main Menu</h3>
+			<ul class="navbar">
+				<a href= "/contacts"> View all contacts </a>  
+				<a href = '/contacts/new'> Add your contact </a>
+			</ul></nav>
+		</header>
+		</div>
+		<div id="ruby">
+			<div id="centr">
+				<%= yield %>
+			</div>
+		</div>
+		<footer>
+			<p>if you have any questions, please contact our dev team. 
+			</p>
+		</footer>
 
-	<%= yield %>
-</body>
-</html>
+	</body>
+	</html>
